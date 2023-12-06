@@ -7,6 +7,10 @@ app = Flask(__name__)
 
 # == Your Routes Here ==
 
+@app.route('/goodbye', methods=['GET'])
+def get_goodbye():
+    return render_template('goodbye.html', message='Bye!')
+
 
 # == Example Code Below ==
 
